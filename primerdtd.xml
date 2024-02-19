@@ -1,8 +1,9 @@
-<!ELEMENT bdcorreo (email)+>
-<!ELEMENT email (destinatario,asunto,cuerpo)>
+<!ELEMENT bdcorreo (email)*>
+<!ELEMENT email (destinatario+,asunto?,cuerpo)>
 <!ELEMENT destomatario (#PCDATA)>
 <!ELEMENT asunto (#PCDATA)>
 <!ELEMENT cuerpo (#PCDATA)>
+
 <bdcorreo>
     <email>
         <destinatario>ads@gmail.com</destinatario>
